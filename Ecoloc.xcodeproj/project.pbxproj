@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		0E5F5B1E2921E8FA00CE2199 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F5B1D2921E8FA00CE2199 /* AppDelegate.swift */; };
 		0E5F5B202921E8FA00CE2199 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F5B1F2921E8FA00CE2199 /* SceneDelegate.swift */; };
-		0E5F5B222921E8FA00CE2199 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F5B212921E8FA00CE2199 /* ViewController.swift */; };
-		0E5F5B252921E8FA00CE2199 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5F5B232921E8FA00CE2199 /* Main.storyboard */; };
 		0E5F5B272921E8FE00CE2199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5F5B262921E8FE00CE2199 /* Assets.xcassets */; };
 		0E5F5B2A2921E8FE00CE2199 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5F5B282921E8FE00CE2199 /* LaunchScreen.storyboard */; };
 		0E5F5B352921E8FE00CE2199 /* EcolocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F5B342921E8FE00CE2199 /* EcolocTests.swift */; };
 		0E5F5B3F2921E8FE00CE2199 /* EcolocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F5B3E2921E8FE00CE2199 /* EcolocUITests.swift */; };
 		0E5F5B412921E8FE00CE2199 /* EcolocUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F5B402921E8FE00CE2199 /* EcolocUITestsLaunchTests.swift */; };
+		0E850ED52921F4E600C32831 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E850ED42921F4E600C32831 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +38,6 @@
 		0E5F5B1A2921E8FA00CE2199 /* Ecoloc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecoloc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5F5B1D2921E8FA00CE2199 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E5F5B1F2921E8FA00CE2199 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E5F5B212921E8FA00CE2199 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0E5F5B242921E8FA00CE2199 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E5F5B262921E8FE00CE2199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E5F5B292921E8FE00CE2199 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E5F5B2B2921E8FE00CE2199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +46,7 @@
 		0E5F5B3A2921E8FE00CE2199 /* EcolocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcolocUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5F5B3E2921E8FE00CE2199 /* EcolocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcolocUITests.swift; sourceTree = "<group>"; };
 		0E5F5B402921E8FE00CE2199 /* EcolocUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcolocUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0E850ED42921F4E600C32831 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +97,14 @@
 		0E5F5B1C2921E8FA00CE2199 /* Ecoloc */ = {
 			isa = PBXGroup;
 			children = (
-				0E5F5B1D2921E8FA00CE2199 /* AppDelegate.swift */,
-				0E5F5B1F2921E8FA00CE2199 /* SceneDelegate.swift */,
-				0E5F5B212921E8FA00CE2199 /* ViewController.swift */,
-				0E5F5B232921E8FA00CE2199 /* Main.storyboard */,
-				0E5F5B262921E8FE00CE2199 /* Assets.xcassets */,
-				0E5F5B282921E8FE00CE2199 /* LaunchScreen.storyboard */,
 				0E5F5B2B2921E8FE00CE2199 /* Info.plist */,
+				0E5F5B4D2921E93500CE2199 /* AppDelegate */,
+				0E850ECA2921F32700C32831 /* Components */,
+				0E850ECB2921F33000C32831 /* Extensions */,
+				0E850ECC2921F33600C32831 /* Models */,
+				0E850ECD2921F33C00C32831 /* Resources */,
+				0E850ECE2921F34300C32831 /* Screens */,
+				0E850ECF2921F34900C32831 /* Services */,
 			);
 			path = Ecoloc;
 			sourceTree = "<group>";
@@ -125,6 +124,92 @@
 				0E5F5B402921E8FE00CE2199 /* EcolocUITestsLaunchTests.swift */,
 			);
 			path = EcolocUITests;
+			sourceTree = "<group>";
+		};
+		0E5F5B4D2921E93500CE2199 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0E5F5B1D2921E8FA00CE2199 /* AppDelegate.swift */,
+				0E5F5B1F2921E8FA00CE2199 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		0E850ECA2921F32700C32831 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0E850ECB2921F33000C32831 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0E850ECC2921F33600C32831 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0E850ECD2921F33C00C32831 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E5F5B262921E8FE00CE2199 /* Assets.xcassets */,
+				0E5F5B282921E8FE00CE2199 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0E850ECE2921F34300C32831 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0E850ED32921F46200C32831 /* Map */,
+				0E850ED22921F45500C32831 /* EcopointDetails */,
+				0E850ED12921F43A00C32831 /* AddEcopoint */,
+				0E850ED02921F41700C32831 /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0E850ECF2921F34900C32831 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0E850ED02921F41700C32831 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0E850ED42921F4E600C32831 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0E850ED12921F43A00C32831 /* AddEcopoint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddEcopoint;
+			sourceTree = "<group>";
+		};
+		0E850ED22921F45500C32831 /* EcopointDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EcopointDetails;
+			sourceTree = "<group>";
+		};
+		0E850ED32921F46200C32831 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +318,6 @@
 			files = (
 				0E5F5B2A2921E8FE00CE2199 /* LaunchScreen.storyboard in Resources */,
 				0E5F5B272921E8FE00CE2199 /* Assets.xcassets in Resources */,
-				0E5F5B252921E8FA00CE2199 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +342,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E5F5B222921E8FA00CE2199 /* ViewController.swift in Sources */,
 				0E5F5B1E2921E8FA00CE2199 /* AppDelegate.swift in Sources */,
 				0E5F5B202921E8FA00CE2199 /* SceneDelegate.swift in Sources */,
+				0E850ED52921F4E600C32831 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +381,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0E5F5B232921E8FA00CE2199 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0E5F5B242921E8FA00CE2199 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0E5F5B282921E8FE00CE2199 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +518,7 @@
 				INFOPLIST_FILE = Ecoloc/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +546,7 @@
 				INFOPLIST_FILE = Ecoloc/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
