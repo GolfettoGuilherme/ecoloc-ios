@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class HomeViewController: UIViewController {
     
@@ -15,22 +16,23 @@ class HomeViewController: UIViewController {
     
     private lazy var stackView: UIStackView = {
        let stackView = UIStackView()
+        stackView.backgroundColor = .systemRed
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.spacing = 16
         stackView.isLayoutMarginsRelativeArrangement = true
         stackView.layoutMargins = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
-        stackView.addArrangedSubview(logoStackView)
         return stackView
     }()
     
     private lazy var logoStackView: UIStackView = {
         let stackview = UIStackView()
+        stackview.backgroundColor = .systemBlue
         stackview.translatesAutoresizingMaskIntoConstraints = false
         stackview.axis = .horizontal
         stackview.spacing = 16
-//        stackview.addArrangedSubview(logoImage)
-//        stackview.addArrangedSubview(logoLabel)
+        stackview.addArrangedSubview(logoImage)
+        stackview.addArrangedSubview(logoLabel)
         return stackview
     }()
     
@@ -54,7 +56,6 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(stackView)
         configure()
     }
 
@@ -67,18 +68,25 @@ class HomeViewController: UIViewController {
 extension HomeViewController {
     
     func configure() {
-        NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: view.topAnchor),
-            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            
-            logoImage.widthAnchor.constraint(equalToConstant: 50),
-            logoImage.heightAnchor.constraint(equalToConstant: 50),
-        ])
+        view.addSubview(stackView)
+        
+        stackView.addArrangedSubview(logoStackView)
+        
+        logoImage.snp.makeConstraints {
+            $0.width.equalTo(<#T##other: ConstraintRelatableTarget##ConstraintRelatableTarget#>)
+        }
+        
+        stackView.snp.makeConstraints{
+            $0.edges.equalToSuperview()
+        }
+        
     }
     
 }
+
+//-----------------------------------------------------------------------
+// MARK: - Preview
+//-----------------------------------------------------------------------
 
 #if canImport(SwiftUI) && DEBUG
 import SwiftUI

@@ -1,0 +1,6 @@
+framework module Pods_EcolocTests {
+  umbrella header "Pods-EcolocTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
